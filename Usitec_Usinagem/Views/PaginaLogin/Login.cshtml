@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Página de Login";
+    Layout = "LayoutLogin";
+}
+
+@section content{
+    <form asp-controller="PaginaLogin" asp-action="Autenticar" method="post">
+    <div class="container">
+        <div class="bem-vindo">
+            <h1>Bem Vindo!</h1>
+            <h2>Usitec Usinagem</h2>
+            <p>Uma empresa dedicada a prestar serviços de torno e fresa nos processos convencionais e cnc, usinagem de pequeno e médio porte em materiais ferrosos e não ferrosos.</p>
+            <p>Forneceremos o melhor serviço de Usinagem para o seu negócio.</p>
+            <p>Fundada em 13 de junho do ano de 2001 diante de uma oportunidade de mercado. </p>
+            <p>Desde então a Usitec vem se adaptando as mudanças do mercado e de seus clientes afim de fortalecer cada vez mais suas parcerias.</p>
+        </div>
+        <div class="login-container">
+            <h2><img src="~/Imagens/download-removebg-preview.png" width="100" height="100" /></h2>
+            <input type="text" name="NomeUsuario" placeholder="Nome de usuário" />
+            <input type="password" name="Senha" placeholder="Senha" />
+            <p class="left-align"><a href="#" onclick="console.log('Antes de chamar mostrarPopup'); mostrarPopup('esqueceuSenha')">Esqueceu a senha?</a></p>
+            <button>Entrar</button>
+            <a asp-controller="Conta" asp-action="NovaConta">Criar nova conta?</a>
+        </div>
+    </div>
+    </form>
+}
+

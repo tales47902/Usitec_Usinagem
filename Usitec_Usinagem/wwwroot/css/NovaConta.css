@@ -1,0 +1,43 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(/Imagens/christopher-burns-8KfCR12oeUM-unsplash.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.conta-container {
+    height: 50vh;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conta-container h2{
+    text-align: center;
+}
+
+.conta-container input[type="text"],
+.conta-container input[type="password"],
+.conta-container button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info {
+    float: left;
+    color: white;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}

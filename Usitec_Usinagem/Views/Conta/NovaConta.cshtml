@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Criar Nova Conta";
+    Layout = "LayoutNovaConta";
+    @model Usitec_Usinagem.Models.ContaViewModel;
+}
+
+@section content{
+<form asp-controller="Conta" asp-action="CriarConta" method="post" asp-for="ContaViewModel">
+    <div class="container">
+        <div class="info">
+            <h1>Olá, Por Favor!</h1>
+            <p>Insira o nome completo do funcionário no "Nome de Usúario".</p>
+            <p>Crie uma senha fácil de ser memorizada.</p>
+        </div>
+        <div class="conta-container">
+            <h2><img src="~/Imagens/download-removebg-preview.png" width="100" height="100" /></h2>
+            <input type="text" id="nomeUsuario" name="NomeUsuario" placeholder="Nome de usuário" asp-for="NomeUsuario"/>
+            <input type="password" id="senha" name="Senha" placeholder="Senha" asp-for="Senha"/>
+            <input type="password" id="confirmarSenha" name="ConfirmarSenha" placeholder="Confirma Senha" asp-for="ConfirmarSenha"/>
+            <button>Criar Conta</button>
+        </div>
+    </div>
+</form>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+}
